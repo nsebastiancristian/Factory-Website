@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------------------------------------------------- */
+/*  					DEFAULT RULES 						*/
+/* -------------------------------------------------------- */
+
+
+*
+{
+	margin: 0px;
+	padding: 0px;	
+}
+
+body
+{
+	
+}
+
+#wrapOverall
+{
+	position: relative;
+	
+	width: 1069px;
+	height: 1001px;
+	
+	margin-left: auto;
+	margin-right: auto;	
+	
+	background-color: #ffffff;
+}
+
+.clear
+{
+	clear: both;	
+}
+
+/* -------------------------------------------------------- */
+/*  					HEADER		 						*/
+/* -------------------------------------------------------- */
+
+
+#headerBar
+{
+	width: 100%;
+	height: 29px;
+	
+	margin-top:5px;
+	
+	background-color:#f3f3f3;
+}
+
+#countryBar
+{
+	widows: 100%;
+	height: 48px;
+	
+	background-color:#ffffff;
+}
+
+#countryBar .countryFlag
+{
+	float:right;
+	
+	//width: 22px;
+	//height: 13px;
+	
+	margin-top: 10px;
+	margin-right: 10px;
+	
+}
+
+/* -------------------------------------------------------- */
+/*  					LEFT COLUMN 						*/
+/* -------------------------------------------------------- */
+
+
+#leftColumn
+{
+	float: left;
+		
+	width: 266px;
+		
+	background-color: #d4d4d4;		
+}
+
+#logo
+{
+	width: 100%;
+	height: 77px;
+	
+	background-color: #ee0b0b;
+}
+
+#menu
+{
+	width: 100%;
+	
+}
+
+#menu a
+{
+	padding-left: 8px;
+	padding-top: 10px;
+	padding-bottom: 9px;
+	
+	color: #ffffff;
+	text-decoration: none;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 0.8em;
+		
+	display: block;
+}
+
+#menu a.autowidth
+{
+	padding-right: 8px;	
+}
+
+#menu a:hover
+{
+	background-color: #0000ff;
+}
+
+#wrapOverall #leftColumn #menu ul 
+{
+}
+
+#wrapOverall #leftColumn #menu ul  li 
+{
+	list-style-type: none;
+	
+	background-color: #1288e6;
+}
+
+/* NUMAI DE LA AL DOILEA MENU ITEM APLICAM BORDURA DE 1 PIXEL*/
+#wrapOverall #leftColumn #menu ul li.second 
+{
+	border-top: 1px solid #67bafb;
+}
+
+#menu li ul
+{
+	display: none;	
+}
+
+#menu li:hover > ul
+{
+	position: absolute;
+	width: 266px;
+	
+	display: block;
+	left: 266px;
+	
+	
+}
+
+#menu li:hover > ul.firstFloor
+{
+	top:154px;
+	
+	
+}
+
+#menu li:hover > ul.secFloor
+{
+	top:190px;
+}
+
+#menu li:hover > ul.thirdFloor
+{
+	top:226px;
+}
+
+#menu li:hover > ul.autowidth
+{
+	width: auto;
+	
+	padding-right: 8px;
+}
+
+#menu li:hover > ul li
+{
+	
+	
+	width: 100%;
+}
+
+#menu li:hover > ul .sec
+{
+	border-top: 1px solid #67bafb;
+}
+
+#searchBox
+{
+	  width: 100%;
+	  height: 23px;
+	
+    padding-top: 8px;
+    padding-bottom: 8px;
+  
+	  background-color: white;
+}
+
+#searchBox .leftCol
+{
+		float:left;
+		
+		margin-left:5px;	
+    margin-right:6px;
+}
+
+#searchBox .rightCol
+{
+	float:left;
+	
+	margin-top:-4px;
+}
+
+#dateBox
+{
+		
+	width: 100%;
+	height: 37px;
+	
+	background-color: orange;
+}
+
+#dateBox .leftF
+{
+	float:left;	
+  
+  margin-top: 10px;
+  margin-left: 10px;
+  
+  font-size: 1.1em;  	
+}
+
+#dateBox .rightF
+{
+	float:right;
+  
+   margin-top: 10px;
+   margin-right: 14px;
+}
+
+#newsBox
+{
+	width: 100%;
+	height: auto;
+	
+	//background-color: yellow;	
+}
+
+#newsBox #newsItem
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#newsBox #newsItem #date
+{
+	float:left;
+}
+
+#newsBox #newsItem #link
+{
+	float:left;
+  
+  margin-left: 6px;
+}
+
+#newsBox #newsItem #content
+{
+	clear:both;
+  
+  padding-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+/*  					RIGHT COLUMN 						*/
+/* -------------------------------------------------------- */
+
+
+#rightColumn
+{
+	float: left;
+	
+	width: 802px;
+		
+	border-left: 1px solid white;
+}
+
+#mainContentPic
+{
+	float: left;
+	width: 802px;
+	height: 292px;
+	
+	background-image:url(Images/MainContentImage_top.jpg);
+}
+
+#mainContent
+{
+	float: left;
+	clear: both;
+	
+	width:802px;
+	height:507px;
+	
+	//background-color:#0FF;	
+	
+	background-image:url(Images/MainContentImage_bottom.jpg);
+}
+
+#footer
+{
+	clear: both;
+	
+	width: 100%;
+	height: 30px;
+	
+	border-top: 1px solid white;
+	
+	background-color: #e9e7e7;
+}
+
+
+#wrapOverall #footer #left 
+{
+	float: left;
+	
+	width: 266px;
+	height: 30px;
+	
+	background-color: #d4d4d4;
+}
+
+#wrapOverall #footer #right 
+{
+	float: left;
+	
+	width: auto;
+}
+
+#boxelement {
+	position:fixed;
+	height: 250px;
+	width: 250px;
+	top: 300px;
+	right: 300px;
+}
+
+
+
+
+

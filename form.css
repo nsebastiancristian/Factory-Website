@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+td.spaced 
+{
+	padding: 10px;	
+}
+
+th.spaced
+{
+	padding: 10px;
+}	
+
+td.spaced5px 
+{
+	padding: 5px;	
+}
+
+body
+{
+	font: "Times New Roman", Times, serif;	
+	//color: red;
+}
+
+td.orange
+{
+	background-color: #FBCE71;
+	
+}
+
+#date_box
+{
+	display: none;	
+}
+
+#left-col
+{
+	width: 90%;	
+	
+	
+}
+
+#left-col table
+{
+		margin-right: auto;
+		margin-left: auto; 
+}
+
+#left-col .wrapper
+{
+		margin-right: auto;
+		margin-left: auto; 
+		width: 200px;
+		
+		margin-top: 150px;
+		padding: 50px;
+		
+		background-color:#CCCC33;
+}
+
+
+#right-col
+{
+	width: 10%;
+	background-color:#F99531;
+	
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+#right-col h1
+{
+	text-align: center;
+}
+
+#right-col li
+{
+	list-style:none;
+}
+
+
+.highlight
+{
+	background-color: red;	
+}
+
+th 
+{ 
+	background-color: #999;
+}
+
+.odd_row 
+{ 
+	background-color: #d1d1d2; 
+}
+
+.even_row 
+{ 
+	background-color: #FFF; 
+}
+
+.cell_block
+{
+	text-align: center;	
+}
+
+#index_nav
+{
+	
+	color: red;
+	margin-top: 10px;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+a.nav
+{
+	text-decoration: none;
+	color = blue;	
+}
+
+a.navy
+{
+	text-decoration: none;
+	color: red;	
+}
+
+.green
+{
+	color: orange;	
+}
+
+#photo_content
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;	
+}
+
+.pic
+{
+ 	width: 100px;
+	height: 130px;	
+}
+
+.centered
+{
+	text-align: center;	
+}
+
+td.formated
+{
+	padding-left:15%;
+	padding-right: 15%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+td.up10
+{
+	padding-top: 10px;
+	padding-bottom: 10px;	
+}

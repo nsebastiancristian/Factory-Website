@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TMG Main Page</title>
+
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="fancybox/lib/jquery-1.9.0.min.js"></script> 
+<!-- <script type="text/javascript" src="my_codeGallery.js"></script> -->
+
+<script type="text/javascript" src="my_codeMenu.js"></script>
+<script type="text/javascript" src="headerAnimation.js"></script>
+
+<!-- Fancybox script goes here -->
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js"></script>
+
+<!-- PURL Master script goes here -->
+<script type="text/javascript" src="purl-master/purl.js"></script>
+
+<script type="text/javascript" src="generalCode.js"></script>
+
+
+
+<!--
+<script type="text/javascript">
+	var coreName = "bag-o-form";		//this is the start of the file name
+	
+	$(function() {
+		//preload the images
+		preload(coreName, 3);
+	});
+</script>
+-->
+
+<!-- STYLE -->
+<link href="default.css" rel="stylesheet" type="text/css" />
+
+<!-- Fancybox style goes here -->
+<link href="fancybox/source/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+
+
+
+<style type="text/css">
+	#mainContent
+{
+	background-image:none;
+}
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<div id="wrapOverall">
+	
+    <!-- ========================================================================================
+    	-------------------------- HEADER ANIMATION ---------------------------------------------
+        ========================================================================================= --> 
+    <div id="headerBar">
+    		<!-- -->  <img src="Images/Header Animation Images/Welding-Sparks-01.jpg"  /> 
+            <div class="title"></div>
+    </div> <!-- /headerBar -->
+    
+    
+    <div id="countryBar">
+    	<div class="countryFlag">
+        	<a href="home_eng.html?lang=eng" ><img src="Images/flag1.jpg" /></a>
+        </div>
+        
+        <div class="countryFlag">
+        	<a href="home_rom.html?lang=rom"><img src="Images/flag1.jpg" /></a>
+        </div>
+        
+        <div class="countryFlag">
+        	<a href="home_fra.html?lang=fra"><img src="Images/flag1.jpg" /></a>
+        </div>
+        
+         <div class="countryFlag">
+        	<a href="home_ita.html?lang=ita"><img src="Images/flag1.jpg" /></a>
+        </div>
+        
+        <div class="countryFlag">
+        	<a href="home_spa.html?lang=spa"><img src="Images/flag1.jpg" /></a>
+        </div>
+        
+        <div class="countryFlag">
+        	<a href="home_deu.html?lang=deu"><img src="Images/flag1.jpg" /></a>
+        </div>
+    
+    </div> <!-- /countryBar -->
+    
+    <!-- leftColumn -->
+    <div id="leftColumn">
+    	<div id="logo">
+        	<a style="text-decoration:none;" href="index.html"><img src="Images/Icons/Sigla-TMG.jpg" /></a>
+        </div> <!-- /logo -->
+        <div id="menu">
+        	<ul>
+            	<li class="submenu"><a href="#" onclick="return prevDef();">ABOUT COMPANY</a> <div id="menu-arrow" class="first"></div>
+                	<ul class="firstFloor">
+                    	<li> <a href="">HISTORY </a></li>
+                        <li> <a href="" class="sec">CONTACT </a></li>
+                        <li> <a href="" class="sec">ANYTHING </a></li>
+                    </ul>
+                </li>
+                <li class="second submenu"><a href="#" onclick="return prevDef();">MACHINE TOOLS</a> <div id="menu-arrow" class="first"></div>
+                	<ul class="autowidth secFloor">
+                    	<li> <a href="#" onclick="return loadVerticalMT_eng();" class="autowidth">VERTICAL TURNING AND BORING MILLS </a></li>
+                        <li> <a href="#" onclick="return loadHorizMT_eng();" class="sec autowidth">HORIZONTAL BORING AND MILLING MACHINES</a></li>
+                        <li> <a href="#" onclick="return loadGantryMT_eng();" class="sec">GANTRY MILLING MACHINES</a></li>
+                        <li> <a href="" class="sec">REBUILDING AND RETROFITTING</a></li>
+                    </ul>
+                </li>
+                <li class="second submenu"><a href="#" onclick="return prevDef();">TIRE MACHINERY</a> <div id="menu-arrow" class="first"></div>
+                	<ul class="thirdFloor">
+                    	<li> <a href="#" onclick="return loadAutolockPress_eng();">AUTOLOCK </a></li>
+                        <li> <a href="#" onclick="return loadLTBagomaticPress_eng();" class="sec autowidth">LT BAG-O-MATIC</a></li>
+                        <li> <a href="#" onclick="return loadBagoformPress_eng();" class="sec">BAG-O-FORM</a></li>
+                        <li> <a href="#" onclick="return loadOTRBomPress_eng();" class="sec">OTR-BOM</a></li>
+                        <li> <a href="" class="sec">REBUILDING</a></li>
+                    </ul>
+                </li>
+                <li class="second"><a href="">NUCLEAR EQUIPMENT</a></li>
+                <li class="second"><a href="">PHOTOGALLERY</a></li>
+                <li class="second"><a href="">HOME</a></li>
+            </ul>
+        </div> <!-- /menu -->
+        <div id="searchBox">
+   	    	<!--<img src="Images/Placeholder-Search-Box.jpg" width="266" height="32" /> -->
+            <form method="post">
+            <div class="leftCol">SEARCH: <input type="text" /></div>
+            
+            <div class="rightCol">
+            <button type="submit">
+    <img src="Images/Search_Button_simple.jpg" onmouseover="this.src='Images/Search_Button_pressed.jpg';" onmouseout="this.src='Images/Search_Button_simple.jpg';" />
+</button> </div>
+          </form>
+        </div> <!-- /searchbox -->
+        <div id="dateBox">
+        	<div class="leftF">
+            	March
+            </div>
+            <div class="rightF">
+            	11.03.2013 12:00
+            </div>
+        </div>
+        <div id="newsBox">
+        	<div id="newsItem">
+            	<div id="date">
+                21.01.2013 |
+                </div>
+                <div id="link">
+                <a href="">SOLIGORSKIJ INSTITUT</a>
+                </div>
+                <div id="content">
+                On 08.01.2013 at the end-user SOLIGORSKIJ INSTITUT has begun the final installation of the machine SKJ 63-114 D delivered in November 2012. Tests and commissioning of machine is planned in last week of March 2013. 
+                </div>
+            </div><!-- /newsItem -->
+            
+            <div id="newsItem">
+            	<div id="date">
+                21.01.2013 |
+                </div>
+                <div id="link">
+                <a href="">SOLIGORSKIJ INSTITUT</a>
+                </div>
+                <div id="content">
+                On 08.01.2013 at the end-user SOLIGORSKIJ INSTITUT has begun the final installation of the machine SKJ 63-114 D delivered in November 2012. Tests and commissioning of machine is planned in last week of March 2013. 
+                </div>
+            </div><!-- /newsItem -->
+            
+            <div id="newsItem">
+            	<div id="date">
+                21.01.2013 |
+                </div>
+                <div id="link">
+                <a href="">SOLIGORSKIJ INSTITUT</a>
+                </div>
+                <div id="content">
+                On 08.01.2013 at the end-user SOLIGORSKIJ INSTITUT has begun the final installation of the machine SKJ 63-114 D delivered in November 2012. Tests and commissioning of machine is planned in last week of March 2013. 
+                </div>
+            </div><!-- /newsItem -->
+            
+         <div class="arrowBox">   
+           
+            <img class="leftArrow" src="Images/Icons/rounded corner black/arrow-left_black.png" width="30px" height="30px" />
+             <img class="rightArrow" src="Images/Icons/rounded corner black/arrow-right_black.png"  width="30px" height="30px" /> 
+             
+         </div> <!-- end div arrowBox -->
+            
+        </div> <!-- /newsBox -->
+        
+        <div class="clear"></div>
+    </div>
+    <!-- /leftColumn -->
+    
+    <!-- rightColumn -->
+    <div id="rightColumn">
+    	<div id="mainContentPic">
+            
+        </div> <!-- /mainContentPic -->
+        
+        <!-- =======================================================================================================================================================================================
+        	 MAIN CONTENT STARTS FROM HERE!!!!
+             =======================================================================================================================================================================================-->
+        
+        <div id="mainContent">
+         <div class="top-bar-gl"></div>
+        	<div id="world-map">
+        		<img  src="Images/maps-world-map_800width.png"/>
+                <div id="Akron"><img src="Images/Icons/map-dot-red.png" width="36px" height="36px"/></div>
+                <div id="Paris"><img src="Images/Icons/map-dot-red.png" width="36px" height="36px"/></div>
+                <div id="Buc"><img src="Images/Icons/map-dot-red.png" width="36px" height="36px"/></div>
+                <div id="Calif"><img src="Images/Icons/map-dot-red.png" width="36px" height="36px"/></div>
+                
+                 <div id="Akron-info" class="global-it-2">
+          			<img src="Images/Icons/Akron.jpg" width="105px" height="79px"/>
+                    <div class="x"><img src="Images/Icons/Exit_x_black.png" /></div>
+                    <h1>Titan TMG Machine Tool, </br> Inc. North America</h1>
+                    <p> E l’avamporto nord- americano del Gruppo YARED per la fabbricazione e vendita i macchine- utensili. Gli uffici amministrativi e di assistenza tecnica si trovano in Akron, Ohio. La vendita è assicurata da specialisti con esperienza ( direttori regionali delle vendite) ripartiti sull’intero territorio degli Stati Uniti d’America. I servizi di fabbricazione in base di contratto sono prestati in modo diretto. Le macchine- utensili sono vendute tramite i distributori locali che detengono l’esclusiva. La preghiamo di contattare l’ufficio centrale di Akron per sapere qual è il distributore della sua zona.
+</p>
+					
+          		</div>
+                
+                <div id="Calif-info" class="global-it-1">
+                	<img src="Images/Icons/Akron_TirePress.jpg" />
+                    <div class="x"><img src="Images/Icons/Exit_x_black.png" /></div>
+                    <h1> McNeil & NRM, Inc.-Akron,Ohio </br>
+                    McNeil & NRM-California, Inc. </h1>
+                    <p>
+                    Il gruppo YARED comprende due grandi produttori di equipaggiamenti per l’industria di lavorazione della gomma: McNeil & NRM, Inc.- Akron, Ohio e McNeil & NRM-California, Inc.
+La McNeil & NRM, Inc. effettua la proiezione e la fabbricazione tanto delle presse di vulcanizzazione dei copertoni quanto delle macchine di montaggio dei copertoni. La lunga e la rimarcabile storia della McNeil e NRM - create nel 1907 e rispettivamente nel 1910- sono state ambedue dei veri pionieri nella costruzione di equipaggiamento per la fabbricazione dei copertoni. Lungo i decenni seguenti, le due ditte hanno guadagnato il rispetto dei beneficiari nella loro qualità di innovatori nell’industria di lavorazione della gomma. La ditta formata tramite la riunificazione delle due ditte “McNeil & NRM” ha continuato il programma di ricerca e sviluppo avendo come oggettivo l’eccezionale qualità dei prodotti, a fine di ottenere la completa soddisfazione del cliente.
+La McNeil &NRM - California, Inc. progetta e costruisce calandre per l’industria di fabbricazione dei copertoni, dei copertoni a cui si è aggiunto un nuovo strato di gomma e dei manicotti per i cilindri di pressione. Ex filiale della “AMF Corporation” e più tardi della “The Goodyear Tire & Rubber Company”, la McNeil & NRM è in data odierna membra del Gruppo YARED.
+                    </p>
+                </div>
+                
+                <div id="Akron-info2">
+                	<img src="Images/Icons/Akron_TirePress.jpg" />
+                    <div class="x"><img src="Images/Icons/Exit_x_black.png" /></div>
+                    <h1> McNeil & NRM, Inc.-Akron,Ohio </br>
+                    McNeil & NRM-California, Inc. </h1>
+                    <p>
+                    Il gruppo YARED comprende due grandi produttori di equipaggiamenti per l’industria di lavorazione della gomma: McNeil & NRM, Inc.- Akron, Ohio e McNeil & NRM-California, Inc.
+La McNeil & NRM, Inc. effettua la proiezione e la fabbricazione tanto delle presse di vulcanizzazione dei copertoni quanto delle macchine di montaggio dei copertoni. La lunga e la rimarcabile storia della McNeil e NRM - create nel 1907 e rispettivamente nel 1910- sono state ambedue dei veri pionieri nella costruzione di equipaggiamento per la fabbricazione dei copertoni. Lungo i decenni seguenti, le due ditte hanno guadagnato il rispetto dei beneficiari nella loro qualità di innovatori nell’industria di lavorazione della gomma. La ditta formata tramite la riunificazione delle due ditte “McNeil & NRM” ha continuato il programma di ricerca e sviluppo avendo come oggettivo l’eccezionale qualità dei prodotti, a fine di ottenere la completa soddisfazione del cliente.
+La McNeil &NRM - California, Inc. progetta e costruisce calandre per l’industria di fabbricazione dei copertoni, dei copertoni a cui si è aggiunto un nuovo strato di gomma e dei manicotti per i cilindri di pressione. Ex filiale della “AMF Corporation” e più tardi della “The Goodyear Tire & Rubber Company”, la McNeil & NRM è in data odierna membra del Gruppo YARED.
+                    </p>
+                </div>
+                
+                <div id="Buc-info" class="global-it-4">
+                	<img src="Images/Icons/Factory.jpg" />
+                    <div class="x"><img src="Images/Icons/Exit_x_black.png" /></div>
+                    <h1> Fabrica de masini unelte TMG, Bucuresti Romania</h1>
+                    <p>
+                   Per 40 anni, la Titan Masini Grele (TMG) ha rappresentato il più alto livello della tecnologia dell’industria romena di costruzioni di macchine - utensili, conosciuta e rispettata in tutto il mondo. Gli esperti che attivano nella famiglia delle dite facenti parte dalla YARED GROPU hanno messo le conoscenze e le attitudini nel servizio del progresso della TMG. Dal 1997- in seguito alla privatizzazione- e fino a data odierna, sei ditte romene indipendenti si sono riunite in una sola società di grande performance, apprestando un vero valore per i clienti. Sulla superficie di circa 60.000 mq della TMG si trovano tanto spazi di produzione per le costruzioni saldate e trattamento termico, lavorazione e montaggio, quanto spazi per gli uffici di proiezione, il controllo de della qualità e amministrazione. La TMG rappresenta il centro di fabbricazione dei prodotti di proprietà della YARED GROUP (macchine –utensili da Titan TMG e le macchine per la vulcanizzazione della gomma dalla McNeil & NRM), assicurando allo stesso tempo ai clienti di tutto il mondo servizi di grande valore nel campo delle costruzioni di macchine. </br>
+                    </br>
+                    <span style="float:right; margin-bottom:13px;"><a href="#" onclick="return loadAboutFactory_eng();">Read more...</a></span>
+                  </p>
+                </div>
+                
+                <div id="Paris-info" class="global-it-3">
+                	<h1>Titan TMG Machine Tools Worldwide</h1>
+                    <div class="x"><img src="Images/Icons/Exit_x_black.png" /></div>
+                    <p>
+                    	Ha la sede a Parigi - Francia e si occupa di tutti i mercati dove sono forniti servizi di fabbricazione in base a contratto e macchine- utensili Titan TMG, salvo i mercati del Nord America. La vendita è assicurata tramite i direttori regionali di vendita. I servizi di fabbricazione in base al contratto sono prestati in modo diretto. Le macchine- utensili sono vendute direttamente o tramite l’intermedio dei distributori che non hanno l’esclusiva o degli agenti. La preghiamo di contattare l’ufficio di Parigi per sapere il nome del direttore regionale delle vendite che si occupa della sua zona, salvo le zone di Nord America.
+                    </p>
+                </div>
+                
+                <div id="info-box-map" style="width: 30em">
+                	Si prega di cliccare su uno dei luoghi sulla mappa per maggiori informazioni sul Gruppo Yared...
+                </div>
+       	  </div>	<!-- /world-map -->
+          
+        
+      </div> <!-- /mainContent -->
+    </div> <!-- /rightColumn -->
+   
+    <div id="footer">
+    	<div id="left">
+         <ul>
+         	<li class="first"><a href="">LAST CHANGES</a></li>
+            <li><a href="">WEBMAP</a></li>
+            <li><a href="">PRINT</a></li>
+        </ul>
+        </div> <!-- /left -->
+        <div id="right">
+        	<ul>
+            	<li class="first"><a href="">ABOUT COMPANY</a></li>
+                <li><a href="">PRODUCTION PROGRAMME</a></li>
+                <li><a href="">PHOTOGALLERY</a></li>
+                <li class="last"><a href="">CONTACTS</a></li>
+            </ul>
+        </div> <!-- /right -->
+    </div> <!-- /footer -->
+    
+   
+</div> <!-- /wrapOverall -->
+
+</body>
+</html>
